@@ -1,13 +1,130 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>game-explorer</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Explorer</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">🎮 Game Explorer</div>
+    <div class="nav-links">
+      <button class="nav-btn active" data-page="discover">Discover</button>
+      <button class="nav-btn" data-page="collection">My Collection</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle">☀️</button>
+  </nav>
+
+  <!-- MAIN APP -->
+  <main id="app">
+
+    <!-- PAGINA: DISCOVER -->
+    <section id="page-discover" class="page active">
+
+      <!-- ZOEKBALK EN FILTERS -->
+      <div class="controls-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search games..."
+        />
+
+        <select id="genreFilter">
+          <option value="">All Genres</option>
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="role-playing-games-rpg">RPG</option>
+          <option value="shooter">Shooter</option>
+          <option value="strategy">Strategy</option>
+          <option value="puzzle">Puzzle</option>
+          <option value="sports">Sports</option>
+          <option value="indie">Indie</option>
+        </select>
+
+        <select id="platformFilter">
+          <option value="">All Platforms</option>
+          <option value="4">PC</option>
+          <option value="187">PS5</option>
+          <option value="18">PS4</option>
+          <option value="1">Xbox One</option>
+          <option value="7">Nintendo Switch</option>
+        </select>
+
+        <select id="sortFilter">
+          <option value="-rating">Top Rated</option>
+          <option value="-released">Newest</option>
+          <option value="released">Oldest</option>
+          <option value="name">Name A–Z</option>
+          <option value="-name">Name Z–A</option>
+        </select>
+
+        <button id="resetFilters">Reset</button>
+      </div>
+
+      <!-- RESULTATEN INFO -->
+      <div class="results-info">
+        <span id="resultsCount">Loading games...</span>
+      </div>
+
+      <!-- GAMES GRID -->
+      <div id="gamesContainer" class="games-grid">
+        <!-- Games worden hier dynamisch ingeladen -->
+      </div>
+
+      <!-- LOAD MORE KNOP -->
+      <div class="load-more-wrap">
+        <button id="loadMoreBtn">Load More Games</button>
+      </div>
+
+    </section>
+
+    <!-- PAGINA: COLLECTION -->
+    <section id="page-collection" class="page">
+
+      <h2>My Collection</h2>
+
+      <div class="collection-tabs">
+        <button class="tab-btn active" data-tab="favorites">
+          ❤️ Favorites (<span id="favCount">0</span>)
+        </button>
+        <button class="tab-btn" data-tab="played">
+          ✅ Played (<span id="playedCount">0</span>)
+        </button>
+        <button class="tab-btn" data-tab="wishlist">
+          ⭐ Wishlist (<span id="wishlistCount">0</span>)
+        </button>
+      </div>
+
+      <div id="collectionContainer" class="games-grid">
+        <!-- Collectie wordt hier dynamisch ingeladen -->
+      </div>
+
+      <div id="emptyCollection" class="empty-state">
+        <p>🎮 No games here yet.</p>
+        <button class="nav-btn" data-page="discover">Discover Games</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- DETAIL MODAL -->
+  <div id="gameModal" class="modal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button id="modalClose">✕</button>
+      <div id="modalBody">
+        <!-- Game details worden hier ingeladen -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST MELDING -->
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
