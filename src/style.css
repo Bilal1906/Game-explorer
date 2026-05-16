@@ -572,3 +572,34 @@ img {
   padding: 4rem;
   color: var(--text-secondary);
 }
+
+.search-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-wrap input {
+  width: 100%;
+}
+
+.search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity var(--transition);
+  padding: 4px;
+}
+
+.search-clear.visible {
+  opacity: 1;
+}
+
+.search-clear:hover {
+  color: var(--accent);
+}
