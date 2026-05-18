@@ -118,6 +118,14 @@ platformFilter.addEventListener('change', (e) => {
   loadGames(true);
 });
 
+// 
+// Sortering
+// 
+sortFilter.addEventListener('change', (e) => {
+  currentSort = e.target.value;
+  loadGames(true);
+});
+
 // Zoeken uitvoeren
 const handleSearch = debounce((value) => {
   // Formulier validatie: minimum 2 karakters of leeg
