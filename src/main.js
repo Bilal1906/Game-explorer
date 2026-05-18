@@ -126,6 +126,31 @@ sortFilter.addEventListener('change', (e) => {
   loadGames(true);
 });
 
+//
+// Reset alle filters
+// 
+resetFilters.addEventListener('click', () => {
+  // Alle state resetten
+  currentSearch   = '';
+  currentGenre    = '';
+  currentPlatform = '';
+  currentSort     = '-rating';
+
+  // Alle inputs visueel resetten
+  searchInput.value        = '';
+  genreFilter.value        = '';
+  platformFilter.value     = '';
+  sortFilter.value         = '-rating';
+
+  // X icoontje verbergen
+  if (searchClear) searchClear.classList.remove('visible');
+
+  // Games herladen
+  loadGames(true);
+
+  showToast('Filters gereset!');
+});
+
 // Zoeken uitvoeren
 const handleSearch = debounce((value) => {
   // Formulier validatie: minimum 2 karakters of leeg
