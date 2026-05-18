@@ -7,6 +7,7 @@ import { createGameCard, updateCollectionCounts } from './js/cards.js';
 import { showLoader, showError } from './js/ui.js';
 import { getSavedTheme, saveTheme } from './js/storage.js';
 import { showToast } from './js/ui.js';
+import { initCollection, renderCollection } from './js/collection.js';
 
 //  DOM Elementen selecteren 
 const gamesContainer = document.getElementById('gamesContainer');
@@ -214,6 +215,9 @@ document.querySelectorAll('[data-page]').forEach(btn => {
     // Juiste pagina tonen
     document.getElementById(`page-${page}`).classList.add('active');
     btn.classList.add('active');
+
+    // Collectie herladen als je naar die pagina gaat
+    if (page === 'collection') renderCollection();
   });
 });
 
@@ -232,3 +236,5 @@ const init = () => {
 };
 
 init();
+// Collectie pagina initialiseren
+initCollection();
