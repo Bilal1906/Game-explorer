@@ -15,12 +15,19 @@ const loadMoreBtn    = document.getElementById('loadMoreBtn');
 const themeToggle    = document.getElementById('themeToggle');
 const searchInput    = document.getElementById('searchInput');
 const searchClear    = document.getElementById('searchClear');
+const genreFilter    = document.getElementById('genreFilter');
+const platformFilter = document.getElementById('platformFilter');
+const sortFilter     = document.getElementById('sortFilter');
+const resetFilters   = document.getElementById('resetFilters');
 
 // State bijhouden
 let currentPage  = 1;
 let totalGames   = 0;
 let isLoading    = false;
 let currentSearch = '';
+let currentGenre    = '';
+let currentPlatform = '';
+let currentSort     = '-rating';
 
 // 
 // Games laden en weergeven
@@ -42,6 +49,9 @@ let currentSearch = '';
     const data = await fetchGames({
       page: currentPage,
       search: currentSearch,
+      genre: currentGenre,
+      platform: currentPlatform,
+      ordering: currentSort,
     });
     totalGames = data.count;
 
@@ -91,6 +101,22 @@ const debounce = (func, delay) => {
     timeout = setTimeout(() => func(...args), delay);
   };
 };
+
+// 
+// Genre filter
+// 
+genreFilter.addEventListener('change', (e) => {
+  currentGenre = e.target.value;
+  loadGames(true);
+});
+
+// 
+// Platform filter
+// 
+platformFilter.addEventListener('change', (e) => {
+  currentPlatform = e.target.value;
+  loadGames(true);
+});
 
 // Zoeken uitvoeren
 const handleSearch = debounce((value) => {
