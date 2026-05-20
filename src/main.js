@@ -8,6 +8,7 @@ import { showLoader, showError } from './js/ui.js';
 import { getSavedTheme, saveTheme } from './js/storage.js';
 import { showToast } from './js/ui.js';
 import { initCollection, renderCollection } from './js/collection.js';
+import { openModal } from './js/modal.js';
 
 //  DOM Elementen selecteren 
 const gamesContainer = document.getElementById('gamesContainer');
@@ -233,6 +234,11 @@ const init = () => {
 
   // Games laden
   loadGames();
+
+  // Luister naar openDetail events van game cards
+  document.getElementById('gamesContainer').addEventListener('openDetail', (e) => {
+    openModal(e.detail.gameId);
+  });
 };
 
 init();
