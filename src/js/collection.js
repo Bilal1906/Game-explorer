@@ -76,12 +76,25 @@ const createCollectionCard = (game) => {
   `;
 
   // Verwijder knop
+  // Verwijder knop
   card.querySelector('.btn-remove').addEventListener('click', (e) => {
     e.stopPropagation();
     removeFromCollection(currentTab, game.id);
     updateCollectionCounts();
     showToast(`${game.name} verwijderd uit je collectie`);
     renderCollection();
+
+    // Update de card op de homepage als die zichtbaar is
+    const homeCard = document.querySelector(`#gamesContainer .game-card[data-id="${game.id}"]`);
+    if (homeCard) {
+      const btn = homeCard.querySelector(`.btn-${currentTab === 'favorites' ? 'fav' : currentTab === 'played' ? 'played' : 'wishlist'}`);
+      if (btn) {
+        btn.classList.remove(`active-fav`, `active-played`, `active-wishlist`);
+        if (currentTab === 'favorites') btn.textContent = '🤍 Favorite';
+        if (currentTab === 'played')    btn.textContent = '🎮 Played';
+        if (currentTab === 'wishlist')  btn.textContent = '☆ Wishlist';
+      }
+    }
   });
 
   return card;
