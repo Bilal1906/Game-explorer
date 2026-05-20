@@ -75,7 +75,7 @@ const createCollectionCard = (game) => {
     </div>
   `;
 
-  // Verwijder knop
+  
   // Verwijder knop
   card.querySelector('.btn-remove').addEventListener('click', (e) => {
     e.stopPropagation();
