@@ -44,6 +44,7 @@ Game Explorer maakt gebruik van de RAWG API om meer dan 800.000 games op te hale
 
 ## Mappenstructuur
 
+```
 game-explorer/
 ├── index.html
 ├── package.json
@@ -64,6 +65,7 @@ game-explorer/
         ├── modal.js
         ├── storage.js
         └── ui.js
+```
 
 # Technische vereisten 
 
