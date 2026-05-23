@@ -22,6 +22,7 @@ Game Explorer maakt gebruik van de RAWG API om meer dan 800.000 games op te hale
 # Gebruikte API
 
 - [RAWG Video Games Database API](https://rawg.io/apidocs)
+- Gratis, API-sleutel nodig
 
 # Installatie
 
