@@ -7,6 +7,18 @@ in je persoonlijke collectie.
 
 Game Explorer maakt gebruik van de RAWG API om meer dan 800.000 games op te halen. Gebruikers kunnen zoeken, filteren op genre/platform, sorteren en games opslaan als favoriet, gespeeld of wishlist.
 
+## Wat doet de app?
+
+- 20+ games laden via de RAWG API
+- Kaartweergave met game afbeeldingen, rating en genres
+- Zoeken op naam (met debounce)
+- Filteren op genre en platform
+- Sorteren op rating, naam, release datum en meer
+- Favorieten, gespeeld en wishlist opslaan (blijft bewaard na sluiten browser)
+- Dark/light thema (voorkeur wordt onthouden)
+- Detail modal per game met beschrijving, platforms, metacritic score en speelduur
+- Verwijderen van games uit je collectie
+
 # Gebruikte API
 
 - [RAWG Video Games Database API](https://rawg.io/apidocs)
