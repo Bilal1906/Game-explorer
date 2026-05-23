@@ -134,5 +134,13 @@ game-explorer/
 # Gebruikte bronnen
 
 - RAWG API documentatie: https://rawg.io/apidocs
-- Vite documentatie: https://vitejs.dev
-- AI chatlog: **
+- MDN Fetch API: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+- MDN LocalStorage: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+- MDN IntersectionObserver: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+- MDN Array methodes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+- Vite documentatie: https://vitejs.dev/
+- Claude (Anthropic) gebruikt voor uitleg van concepten en debuggen
+
+ 
+
+
