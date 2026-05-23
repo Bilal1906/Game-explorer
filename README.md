@@ -141,6 +141,7 @@ game-explorer/
 - Vite documentatie: https://vitejs.dev/
 - Claude (Anthropic) gebruikt voor uitleg van concepten en debuggen
 
- 
+# AI-chatlog
+
 
 
