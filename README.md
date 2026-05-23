@@ -1,10 +1,11 @@
 # Game Explorer
 
-Een interactieve single-page applicatie waarmee je games kan ontdekken, filteren, sorteren en opslaan in je persoonlijke collectie.
+Een interactieve single-page applicatie voor het vak web advanced. Je kan hiermee games ontdekken, filteren, sorteren en opslaan
+in je persoonlijke collectie.
 
 # Projectbeschrijving
 
-Game Explorer maakt gebruik van de RAWG API om meer dan 500.000 games op te halen. Gebruikers kunnen zoeken, filteren op genre/platform, sorteren en games opslaan als favoriet, gespeeld of wishlist.
+Game Explorer maakt gebruik van de RAWG API om meer dan 800.000 games op te halen. Gebruikers kunnen zoeken, filteren op genre/platform, sorteren en games opslaan als favoriet, gespeeld of wishlist.
 
 # Gebruikte API
 
