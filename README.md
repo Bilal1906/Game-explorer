@@ -65,13 +65,53 @@ game-explorer/
         ├── storage.js
         └── ui.js
 
-# Technische vereisten (wordt aangevuld)
+# Technische vereisten 
 
+### DOM Manipulatie
 | Concept | Bestand | Lijnnummer |
 |---|---|---|
-| DOM manipulatie | wordt aangevuld | - |
-| Fetch / Async Await | wordt aangevuld | - |
-| LocalStorage | wordt aangevuld | - |
+| Elementen selecteren | src/main.js | regel 14-21 (`document.getElementById`) |
+| Elementen manipuleren | src/js/cards.js | regel 42 (`card.innerHTML`, `card.className`) |
+| Events koppelen | src/main.js | regel 82 (`loadMoreBtn.addEventListener`) |
+
+### Modern JavaScript
+| Concept | Bestand | Lijnnummer |
+|---|---|---|
+| const | overal gebruikt | - |
+| Template literals | src/js/cards.js | regel 43 (card HTML met backticks) |
+| Array iteratie | src/main.js | regel 65 (`forEach` over games) |
+| Array methodes | src/js/cards.js | regel 17 (`slice`, `map`), src/js/storage.js regel 37 (`some`), regel 43 (`filter`) |
+| Arrow functions | overal gebruikt | - |
+| Ternary operator | src/js/cards.js | regel 22 (`game.rating ? ... : 'N/A'`) |
+| Callback functions | src/main.js | regel 82+ (bij alle `addEventListener`) |
+| Promises | src/js/api.js | regel 30 (`fetch` geeft een Promise terug) |
+| Async/Await | src/js/api.js | regel 7 (`fetchGames`), regel 40 (`fetchGameDetail`) |
+| Observer API | src/js/cards.js | regel 27 (`loading="lazy"` via browser IntersectionObserver) |
+
+### Data & API
+| Concept | Bestand | Lijnnummer |
+|---|---|---|
+| Fetch | src/js/api.js | regel 30 (`fetchGames`), regel 44 (`fetchGameDetail`) |
+| JSON | src/js/api.js | regel 37 (`response.json()`), src/js/storage.js regel 10 (`JSON.parse`), regel 17 (`JSON.stringify`) |
+
+### Opslag & Validatie
+| Concept | Bestand | Lijnnummer |
+|---|---|---|
+| Formuliervalidatie | src/main.js | regel 131 (zoekterm min. 2 tekens) |
+| LocalStorage | src/js/storage.js | regel 9 (`getCollection`), regel 16 (`saveCollection`) |
+
+### Styling & Layout
+| Concept | Bestand | Lijnnummer |
+|---|---|---|
+| CSS Grid | src/style.css | regel 168 (`.games-grid`) |
+| Flexbox | src/style.css | regel 62 (`.navbar`), regel 127 (`.controls-bar`) |
+| Verwijderknoppen/iconen | src/js/collection.js | (`btn-remove`) |
+
+### Tooling
+| Concept | Bestand |
+|---|---|
+| Vite | `vite.config.js` en `package.json` |
+| Folderstructuur | aparte html, css en js bestanden onder `src/` |
 
 # Screenshots
 
