@@ -26,19 +26,21 @@ Game Explorer maakt gebruik van de RAWG API om meer dan 800.000 games op te hale
 
 # Installatie
 
-1. Clone de repository
-   
-   git clone https://github.com/JOUW-NAAM/game-explorer.git
+1. Clone de repository:
+   `git clone https://github.com/Bilal1906/Game-explorer.git`
 
-2. Installeer dependencies
+2. Installeer dependencies:
+   `npm install`
 
-   npm install
+3. Maak een eigen `.env` bestand aan in de root van het project.
+   Ga naar https://rawg.io/apidocs en maak een gratis account aan om een API key te krijgen.
+   Zet dan dit in je `.env` bestand:
+   `VITE_RAWG_API_KEY=jouw_api_key_hier`
 
-3. Start de development server
+4. Start de development server:
+   `npm run dev`
 
-   npm run dev
-
-4. Open http://localhost:5173 in je browser
+5. Open http://localhost:5173 in je browser.
 
 # Technische vereisten (wordt aangevuld)
 
