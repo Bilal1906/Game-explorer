@@ -124,7 +124,12 @@ game-explorer/
 
 # Screenshots
 
-**
+
+<img width="1906" height="909" alt="Screenshot 2026-05-23 145813" src="https://github.com/user-attachments/assets/fa4016cd-82fc-477b-a56f-2ed468a4d919" />
+<img width="1915" height="905" alt="Screenshot 2026-05-23 145827" src="https://github.com/user-attachments/assets/f6a398b4-5d85-4708-81fe-c695cb56ed9d" />
+<img width="1904" height="913" alt="Screenshot 2026-05-23 145848" src="https://github.com/user-attachments/assets/0193681b-c5ec-45c6-af0c-733a974f5658" />
+
+
 
 # Gebruikte bronnen
 
