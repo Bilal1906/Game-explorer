@@ -113,6 +113,15 @@ game-explorer/
 | Vite | `vite.config.js` en `package.json` |
 | Folderstructuur | aparte html, css en js bestanden onder `src/` |
 
+## Gebruikersvoorkeuren
+
+| Sleutel | Wat wordt opgeslagen |
+|---|---|
+| `gameexplorer_theme` | `dark` of `light` |
+| `gameexplorer_favorites` | array van favoriete games |
+| `gameexplorer_played` | array van gespeelde games |
+| `gameexplorer_wishlist` | array van wishlist games |
+
 # Screenshots
 
 **
