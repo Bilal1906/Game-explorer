@@ -42,6 +42,29 @@ Game Explorer maakt gebruik van de RAWG API om meer dan 800.000 games op te hale
 
 5. Open http://localhost:5173 in je browser.
 
+## Mappenstructuur
+
+game-explorer/
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── .gitignore
+├── .env
+├── README.md
+└── src/
+    ├── main.js
+    ├── counter.js
+    ├── style.css
+    ├── assets/
+    └── js/
+        ├── api.js
+        ├── cards.js
+        ├── collection.js
+        ├── modal.js
+        ├── storage.js
+        └── ui.js
+
 # Technische vereisten (wordt aangevuld)
 
 | Concept | Bestand | Lijnnummer |
