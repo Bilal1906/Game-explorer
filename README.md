@@ -141,7 +141,13 @@ game-explorer/
 - Vite documentatie: https://vitejs.dev/
 - Claude (Anthropic) gebruikt voor uitleg van concepten en debuggen
 
-# AI-chatlog
+# AI-chatlog screenshots
+<img width="1837" height="729" alt="Screenshot 2026-05-23 150320" src="https://github.com/user-attachments/assets/36b67f47-ea54-4dea-ad78-53a5af8abb64" />
+<img width="1822" height="728" alt="Screenshot 2026-05-23 150825" src="https://github.com/user-attachments/assets/61aa9e32-cf06-4c63-ad21-9658ae3d9e37" />
+<img width="1835" height="845" alt="Screenshot 2026-05-23 151040" src="https://github.com/user-attachments/assets/9eeb4fe4-dbd4-4c61-8a66-b3e54d80bbd3" />
+<img width="1840" height="684" alt="Screenshot 2026-05-23 151248" src="https://github.com/user-attachments/assets/6ae2c66b-573c-4c63-a590-6c5d3ae9b8c8" />
+<img width="1856" height="730" alt="Screenshot 2026-05-23 151654" src="https://github.com/user-attachments/assets/f9934fd9-8da6-44d0-b5ed-33ed94cf4731" />
+
 
 
 
