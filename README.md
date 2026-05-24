@@ -150,6 +150,8 @@ game-explorer/
 <img width="1840" height="684" alt="Screenshot 2026-05-23 151248" src="https://github.com/user-attachments/assets/6ae2c66b-573c-4c63-a590-6c5d3ae9b8c8" />
 <img width="1856" height="730" alt="Screenshot 2026-05-23 151654" src="https://github.com/user-attachments/assets/f9934fd9-8da6-44d0-b5ed-33ed94cf4731" />
 <img width="1831" height="720" alt="Screenshot 2026-05-23 154119" src="https://github.com/user-attachments/assets/fd89a775-0576-4438-ad2a-b7be018e93d6" />
+<img width="1828" height="714" alt="Screenshot 2026-05-24 161657" src="https://github.com/user-attachments/assets/943c3cbe-5d69-4eba-ae4c-11243e51d678" />
+<img width="1812" height="675" alt="Screenshot 2026-05-24 162209" src="https://github.com/user-attachments/assets/6dee7387-310c-4f81-a3d1-59837086faab" />
 
 
 
